@@ -34,9 +34,9 @@ function buildCalendar(container, options) {
 
   table.caption.onclick = e => {
     if (e.target === table.caption.firstChild) {
-      b.replaceChildren(buildCalendar(container, prevMonthYear))
+      body.replaceChildren(buildCalendar(container, prevMonthYear))
     } else if (e.target === table.caption.lastChild) {
-      b.replaceChildren(buildCalendar(container, nextMonthYear))
+      body.replaceChildren(buildCalendar(container, nextMonthYear))
     }
   }
 
