@@ -1,9 +1,7 @@
 const months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
 const weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
 
-
 buildCalendar(wrapper)
-
 
 function buildCalendar(container, options) {
   const date = new Date
@@ -48,7 +46,7 @@ function buildCalendar(container, options) {
 }
 
 function buildCaption(year, month) {
-  return `<caption><button style="float:left">←</button>${year}, ${month}<button style="float:right">→</button></caption>`
+  return `<caption style="width: 200px"><button style="float:left">←</button>${year}, ${month}<button style="float:right">→</button></caption>`
 }
 
 function buildWeekdaysHeader() {
